@@ -1,0 +1,21 @@
+public class Administration extends Employee{
+
+    private int vacation;
+
+    public Administration(String name, String cpr, int hours, int salary, int vacation) {
+        super(name, cpr, hours, salary);
+        this.vacation = vacation;
+    }
+
+    public int getVacation(){
+        return vacation;
+    }
+
+    public String toString(){
+        return  "Employee: " + getName() +
+                "\nCPR: " + getCpr() +
+                "\nHours: " + getHours() +
+                "\nSalary: " + getSalary() +
+                "\nVacation: " + getVacation() + "\n";
+    }
+}
